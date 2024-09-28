@@ -4,6 +4,14 @@ public class Main {
         System.out.println();
 //        Напишите пример перехвата и обработки исключения в блоке try-catch метода
 
+        try {
+            double d = 1L / args.length;
+        } catch (ArithmeticException e) {
+            System.out.println("Перехвачено исключение: " + e);
+        }
+
+        System.out.println("Выполняется после оператора catch");
+
     }
 
 }
